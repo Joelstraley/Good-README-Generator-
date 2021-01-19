@@ -66,11 +66,13 @@ inquirer
     },
     ])
      .then((data) => {
+         let licenseBadge;
+         let licenseText;
         const { title, description, url, installation, usage, screenshot, useLicense, contribute, testing, gitHub, email, userName } = data;
         switch (useLicense) {
             case "MIT": 
-                var licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
-                var licenseText =`MIT License
+                 licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+                 licenseText =`MIT License
 
                 Copyright (c) 2021
                 
@@ -94,8 +96,8 @@ inquirer
                 break;
         
         case 'Public Domain': 
-            var licenseBadge = `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
-            var licenseText =`This is free and unencumbered software released into the public domain.
+            licenseBadge = `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
+            licenseText =`This is free and unencumbered software released into the public domain.
     
             Anyone is free to copy, modify, publish, use, compile, sell, or
             distribute this software, either in source code form or as a compiled
@@ -122,8 +124,8 @@ inquirer
             break;
     
         case 'Apache':
-            var licenseBadge = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
-            var licenseText = ` Apache License
+            licenseBadge = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+            licenseText = ` Apache License
             Version 2.0, January 2004
          http://www.apache.org/licenses/
     
@@ -325,14 +327,13 @@ inquirer
     See the License for the specific language governing permissions and
     limitations under the License.`
         break;
-    
             default:  " "
               break;
             
     };    
 
 const generateMD = 
-`# ${title} ${this.licenseBadge}
+`# ${title} ${licenseBadge}
 ## Description
 ${description}
 [View Live Site](${url})
@@ -349,7 +350,7 @@ ${installation}
 ${usage}\n
 ![alt text](${screenshot})
 ## <a name="License">License</a>
-${this.licenseText}
+${licenseText}
 ## <a name="Contributing">Contributing</a>
 ${contribute}
 ## <a name="Tests">Tests</a>
