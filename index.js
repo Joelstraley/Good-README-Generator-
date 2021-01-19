@@ -34,10 +34,10 @@ inquirer
         name: "screenshot",
     }, 
     {  
-        type: "checkbox",
+        type: "list",
         message: "What type of license does this project hold?",
-        name: "license",
-        choices: ["MIT", "Public Domain"],
+        name: "useLicense",
+        choices: ["MIT", "Apache", "Public Domain"],
     },
     {
         type: "input",
@@ -56,15 +56,37 @@ inquirer
     },
     {
         type: "input",
-        message: "What is your email address",
+        message: "What is your email address?",
         name: "email",
+    },
+    {
+        type: "input",
+        message: "What is your name?",
+        name: "userName",
     },
     ])
      .then((data) => {
-        const { title, description, url, installation, usage, screenshot, license, testing } = data;
+        const { title, description, url, installation, usage, screenshot, useLicense, contribute, testing, gitHub, email, userName, } = data;
+        switch (useLicense) {
+            case "MIT": {
+                let licenseBadge = `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
+                let licenseText =`This is free and unencumbered software released into the public domain.`
+                break;
+        }
+            case "Apache": {
+                let licenseBadge = "Apache"
+                let licenseText = "Apache"
+            }
+            default: {" "
+           }   break;
+        };
+
+
+
+
         const generateMD = 
-        }`
-# ${title}\n 
+        `
+# ${title} ${this.licenseBadge}\n 
 ## ${description}\n 
 [View Live Site](${url})
 ## Table of Contents
@@ -79,9 +101,16 @@ ${installation}\n
 ## [Usage](#usage) 
 ${usage}\n
 ![alt text](${screenshot})
-## [License](#license)\n`
-
-        
+## [License](#license)\n
+${this.licenseText}
+## Contributing
+${contribute}
+## Tests
+${testing}
+## Questions
+For questions please reach out to [github.com/${gitHub}](github.com/${gitHub}) 
+or email me at [${email}](mailto:${email})
+ `       
 
                 ;
 
