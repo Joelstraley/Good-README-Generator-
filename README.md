@@ -1,6 +1,6 @@
-# README Generator  [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+# README Generator [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 ## Description
-Through a series of Command Line prompts a GitHub README file is auto-generated
+Through a series of Command Line prompts a GitHub README file is auto-generated\n WALKTHROUGH VIDEO\n <iframe src="https://drive.google.com/file/d/1oT3qTV9P7wt8_H8mWSCAWBEEJP0gBQnf/preview" width="640" height="480"></iframe>
 
 [View Live Site](https://joelstraley.github.io/Good-README-Generator-/)
 ## Table of Contents
@@ -13,7 +13,7 @@ Through a series of Command Line prompts a GitHub README file is auto-generated
 ## <a name="Installation">Installation</a>
 Install Node.JS and Inquirer NPM before use
 ## <a name="usage">Usage</a> 
-Once Node.JS and Inquirer NPM are imported use command line to answer prompts
+Once Node.JS and Inqirer NPM are imported use the Command Line to answer user prompts
 
 Screenshot: 
 ![alt text](https://raw.githubusercontent.com/Joelstraley/Good-README-Generator-/main/README%20Example.png)
@@ -48,4 +48,4 @@ n/a
 n/a
 ## <a name="Questions">Questions</a>
 For questions please reach out to [github.com/JoelStraley](github.com/JoelStraley) 
-or email me at [joelstraley@gmail.com](mailto:joelstraley@gmail.com)
+or email me at [JoelStraley@gmail.com](mailto:JoelStraley@gmail.com)
