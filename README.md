@@ -1,8 +1,10 @@
 # README Generator [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+
 ## Description
-Through a series of Command Line prompts a GitHub README file is auto-generated\n WALKTHROUGH VIDEO\n <iframe src="https://drive.google.com/file/d/1oT3qTV9P7wt8_H8mWSCAWBEEJP0gBQnf/preview" width="640" height="480"></iframe>
+Through a series of Command Line prompts a GitHub README file is auto-generated
 
 [View Live Site](https://joelstraley.github.io/Good-README-Generator-/)
+
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
@@ -15,8 +17,10 @@ Install Node.JS and Inquirer NPM before use
 ## <a name="usage">Usage</a> 
 Once Node.JS and Inqirer NPM are imported use the Command Line to answer user prompts
 
-Screenshot: 
-![alt text](https://raw.githubusercontent.com/Joelstraley/Good-README-Generator-/main/README%20Example.png)
+Screenshot (click for WALKTHROUGH Video): 
+[![alt text](https://raw.githubusercontent.com/Joelstraley/Good-README-Generator-/main/README%20Example.png)](https://drive.google.com/file/d/1oT3qTV9P7wt8_H8mWSCAWBEEJP0gBQnf/preview)
+
+
 ## <a name="License">License</a>
 This is free and unencumbered software released into the public domain.
     
