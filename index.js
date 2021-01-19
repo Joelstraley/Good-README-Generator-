@@ -329,7 +329,7 @@ inquirer
             default:  " "
               break;
             
-    }
+    };    
 
 const generateMD = 
 `# ${title} ${this.licenseBadge}
