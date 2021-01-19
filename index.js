@@ -348,6 +348,7 @@ ${description}\n
 ${installation}
 ## <a name="usage">Usage</a> 
 ${usage}\n
+Screenshot: 
 ![alt text](${screenshot})
 ## <a name="License">License</a>
 ${licenseText}

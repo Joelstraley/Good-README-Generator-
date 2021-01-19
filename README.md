@@ -1,8 +1,8 @@
-# README Generator [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+# README Generator  [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 ## Description
-Through a series of comand line prompts using Node.JS a github README file is generated 
+Through a series of Command Line prompts a GitHub README file is auto-generated
 
-[View Live Site](https://github.com/Joelstraley/Good-README-Generator-)
+[View Live Site](https://joelstraley.github.io/Good-README-Generator-/)
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
@@ -11,10 +11,11 @@ Through a series of comand line prompts using Node.JS a github README file is ge
 * [Tests](#Tests)
 * [Questions](#Questions)
 ## <a name="Installation">Installation</a>
-Install node.js and inquirer NPM
+Install Node.JS and Inquirer NPM before use
 ## <a name="usage">Usage</a> 
-Install node.js and inquirere NPM before running 
+Once Node.JS and Inquirer NPM are imported use command line to answer prompts
 
+Screenshot: 
 ![alt text](https://raw.githubusercontent.com/Joelstraley/Good-README-Generator-/main/README%20Example.png)
 ## <a name="License">License</a>
 This is free and unencumbered software released into the public domain.
@@ -47,4 +48,4 @@ n/a
 n/a
 ## <a name="Questions">Questions</a>
 For questions please reach out to [github.com/JoelStraley](github.com/JoelStraley) 
-or email me at [Joelstraley@gmail.com](mailto:Joelstraley@gmail.com)
+or email me at [joelstraley@gmail.com](mailto:joelstraley@gmail.com)
