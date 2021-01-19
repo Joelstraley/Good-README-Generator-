@@ -335,7 +335,7 @@ inquirer
 const generateMD = 
 `# ${title} ${licenseBadge}
 ## Description
-${description}
+${description}\n
 [View Live Site](${url})
 ## Table of Contents
 * [Installation](#Installation)
